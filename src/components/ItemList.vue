@@ -2,7 +2,7 @@
   <div>
     <div>ItemList</div>
     <div v-for="item in items" :key="item.name">
-      <div class="item" :class="{over500: item.price >= 500}">
+      <div class="item" :class="{ over500: item.price >= 500 }">
         <div class="name">名前： {{ item.name }}</div>
         <div class="price">{{ item.price }}円</div>
         <div v-if="item.price >= 10000">高額商品</div>
